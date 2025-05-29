@@ -1,0 +1,120 @@
+.catalogue__products {
+    &--card {
+        position: relative;
+    }
+
+    &--like {
+        position: absolute;
+        width: 30px!important;
+        height: 25px!important;
+        top: 30px!important;
+        left: 10px;
+    }
+
+    &--filled svg{
+        fill: #fff;
+    }
+
+    &--list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    &--card{
+        user-select: none;
+        text-decoration: none;
+        width: 30%;
+        margin-bottom: 100px;
+
+        @media(max-width: 1370px){
+            margin-bottom: 70px;
+        }
+
+        @media(max-width: 1140px){
+            width: 45%;
+            margin-bottom: 50px;
+        }
+
+        @media(max-width: 430px){
+            width: 100%;
+        }
+
+        div{
+            position: relative;
+        }
+
+        &:hover{
+            cursor: pointer;
+
+            .catalogue__products--like{
+                path{
+                    fill: #fff;
+                }
+            }
+
+            
+            .catalogue__products--bag{
+                transition: all 0.5s;
+                background-color: rgba(22, 18, 9, 0.79);
+                padding: 25px 30px;
+                width: 40px;
+                height: 48px;
+            }
+        }
+
+        span{
+            display: inline-block;
+            width: 100%;
+            font-size: 20px;
+
+            @media(max-width: 610px){
+                font-size: 17px;
+            }
+
+        }
+
+        p{
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+
+            @media(max-width: 610px){
+                font-size: 17px;
+            }
+
+        }
+
+        p,span{
+            text-align: center;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            max-height: 550px;
+
+            @media(max-width: 1860px){
+                max-height: 500px;
+            }
+
+            @media(max-width: 1700px){
+                max-height: 450px;
+            }
+
+            @media(max-width: 1450px){
+                max-height: 400px;
+            }
+
+            @media(max-width: 1250px){
+                max-height: 380px;
+            }
+
+            @media(max-width: 1140px){
+                max-height: unset;
+            }
+        }
+    }
+}

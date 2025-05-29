@@ -1,0 +1,26 @@
+.breadcrumb{
+    margin-bottom: 50px;
+    margin-top: 250px;
+
+    a{
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 15px;
+        margin-right: 10px;
+        text-transform: uppercase;
+    }
+
+    svg{
+        width: 6px;
+        height: 12px;
+        margin-right: 10px;
+
+        path:last-child{
+            stroke: #161209;
+        }
+
+        path:first-child{
+            visibility: hidden;
+        }
+    }
+}

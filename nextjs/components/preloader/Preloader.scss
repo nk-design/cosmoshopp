@@ -1,0 +1,18 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: spin 1s ease-in forwards;
+  }
+  
+  @keyframes spin {
+    0% { background: rgb(0, 0, 0); }
+    100% { background: rgb(255, 255, 255); }
+  }

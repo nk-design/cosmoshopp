@@ -1,0 +1,6 @@
+{
+    "ignore": [
+      "db_products.json",
+      "db_slider.json"
+    ]
+}

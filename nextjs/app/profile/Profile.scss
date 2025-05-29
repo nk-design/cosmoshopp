@@ -1,0 +1,75 @@
+.profile{
+    padding: 0 100px;
+
+    @media(max-width: 1140px){
+        padding: 0 50px;
+    }
+
+    @media(max-width: 768px){
+        padding: 0 20px;
+    }
+
+    &__orders,
+    &__promos{
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #000;
+
+        margin-top: 50px;
+        
+        h2{
+            display: flex;
+            
+        }
+
+        svg{
+            transform: rotate(90deg);
+            margin-left: 20px;
+        }
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__orders{
+        &__item{
+            display: flex;
+
+            @media(max-width: 768px){
+                flex-direction: column;
+            }
+            
+            img{
+                max-height: 300px;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &__logout{
+        border: none;
+        background-color: #000;
+        color: #fff;
+        border-radius: 20px;
+        padding: 10px 20px;
+        display: block;
+        margin-bottom: 50px;
+        margin-top: 50px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__delete{
+        border: none;
+        background-color: #c22;
+        color: #fff;
+        border-radius: 20px;
+        padding: 5px 10px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

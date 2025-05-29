@@ -1,0 +1,52 @@
+.like{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    top: 100px;
+    right: 100px;
+    width: 100%;
+    max-width: 400px;
+    overflow: auto;
+    max-height: 500px;
+    z-index: 1;
+
+    @media(max-width: 650px){
+        right: 20px;
+    }
+
+    @media(max-width: 430px){
+        top: 200px;
+        right: 10px;
+        max-width: 300px;
+    }
+
+    &::-webkit-scrollbar{
+        width: 0.5em;
+
+        &-track{
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        &-thumb{
+            background-color: darkgrey;
+            outline: 1px solid slategrey;
+        }
+    }
+
+    a{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 10px 0 50px 0;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    img{
+        object-fit: cover;
+    }
+}

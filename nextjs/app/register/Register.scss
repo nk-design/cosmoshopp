@@ -1,0 +1,28 @@
+.register{
+    padding: 0 100px;
+
+    @media(max-width: 968px){
+        padding: 0 50px;
+    }
+
+    @media(max-width: 650px){
+        padding: 0 30px;
+    }
+
+    &__wrapper{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        max-width: unset;
+
+        input, p{
+            max-width: 600px;
+        }
+
+        .account__buttons{
+            max-width: 600px;
+        }
+    }
+}

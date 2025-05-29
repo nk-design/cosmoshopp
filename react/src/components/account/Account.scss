@@ -1,0 +1,97 @@
+.account{
+    position: fixed;
+    z-index: 101;
+    background-color: #16120985;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__wrapper{
+        background-color: #fff;
+        max-width: 550px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        padding: 20px 100px 50px 100px;
+        position: relative;
+        border-radius: 20px;
+
+        p,h1,input{
+            width: 100%;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        input{
+            border: 1px solid #757575;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        @media(max-width: 780px){
+            padding: 40px;
+            max-width: 900px;
+        }
+    }
+
+    &__close{
+        color: #757575;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        font-weight: 400;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__buttons{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 50px;
+        align-items: baseline;
+
+        @media(max-width: 580px){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a{
+            color: #161209;
+
+            @media(max-width: 580px){
+                margin-bottom: 30px;
+            }
+        }
+
+        button{
+            background-color: #161209;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 200px;
+            height: 40px;
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            @media(max-width: 420px){
+                height: 50px;
+            }
+        }
+    }
+}

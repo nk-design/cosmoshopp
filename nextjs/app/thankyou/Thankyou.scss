@@ -1,0 +1,29 @@
+.thankyou{
+    padding: 300px 100px 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a{
+        text-decoration: none;
+        color: #FDFDFB;
+        border: 1px solid #FDFDFB;
+        background-color: #161209;
+        border-radius: 20px;
+        padding: 20px 40px;
+        transition: 0.2s all;
+        margin-top: 100px;
+
+        &:hover{
+            background-color: #FDFDFB;
+            color: #161209;
+            border: 1px solid #161209;
+            transition: 0.2s all;
+        }
+
+        @media(max-width: 380px){
+            padding: 10px 20px;
+        }
+    }
+}

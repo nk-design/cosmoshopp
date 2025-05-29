@@ -1,0 +1,35 @@
+.notfound{
+    padding: 0 100px;
+
+    @media(max-width: 800px){
+        padding: 0 50px;
+    }
+
+    @media(max-width: 550px){
+        padding: 0 20px;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 150px;
+        color: #161209;
+        font-style: italic;
+        font-weight: 500;
+        margin-bottom: 0;
+
+        @media(max-width: 550px){
+            font-size: 110px;
+        }
+    }
+
+    p{
+        font-size: 35px;
+        font-weight: 400;
+        text-align: center;
+        color: #161209;
+
+        @media(max-width: 550px){
+            font-size: 22px;
+        }
+    }
+}

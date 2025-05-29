@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://cosmoshopp.com
+
+# Sitemaps
+Sitemap: https://cosmoshopp.com/sitemap.xml
